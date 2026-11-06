@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyCook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <img src="banner.png" alt="EasyCook Banner">
+    </div>
+    
+    <h1>EasyCook</h1>
+    <p>Your personal recipe dictionary!</p>
+
+    <hr>
+
+    <button id="mealPlanButton">My Meal Plans</button>
+
+    <h2>Find a recipe</h2>
+    <input type="text" id="searchInput" placeholder="Enter a recipe name">
+    <button id="searchButton">Search</button>
+    
+    <div id="recipeResults">
+        <p>Your recipes will display here!</p>
+    </div>
+
+    <hr>
+
+    <h2>Recipe Suggestions</h2>
+
+    <label>What type of meal do you prefer?</label>
+
+    <select id="categorySelect">
+        <option value="">Choose a category</option>
+        <option value="Chicken">Chicken</option>
+        <option value="Seafood">Seafood</option>
+        <option value="Vegetarian">Vegetarian</option>
+        <option value="Dessert">Dessert</option>
+        <option value="Beef">Beef</option>
+    </select>
+
+    <button id="suggestButton">Get Suggestions</button>
+
+    <div id="suggestionResults"></div>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
